@@ -7,6 +7,9 @@ BUCKET_NAME = st.secrets.filenames["bucket_name"]
 STATE = st.secrets.filenames["state_file"]
 EXAMPLES = st.secrets.filenames["example_file"]
 
+# whether to use /data in local directory or GCS
+USE_LOCAL_DATA = True
+
 def update_global_dict(keys, dump = False):
     for key in keys:
         if key in st.session_state:
@@ -16,32 +19,44 @@ def update_global_dict(keys, dump = False):
         return
 
     if "logged_in" in st.session_state and st.session_state["logged_in"]:
-        # json.dump(global_dict, open(f"data/state_{st.session_state['logged_in']}.json", 'w'))
-        save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['logged_in']}.json", global_dict)
+        if USE_LOCAL_DATA:
+            json.dump(global_dict, open(f"data/state_{st.session_state['logged_in']}.json", 'w'))
+        else:
+            save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['logged_in']}.json", global_dict)
     elif "pid" in st.session_state and st.session_state["pid"]:
         client = get_gc_client()
         bucket = client.get_bucket(BUCKET_NAME)
-        if storage.Blob(bucket=bucket, name=f"data/{STATE}_{st.session_state['pid']}.json").exists(client):
-        # if os.path.exists(f"data/state_{st.session_state['pid']}.json"):
-            # load
-            return
+        if USE_LOCAL_DATA:
+            if os.path.exists(f"data/state_{st.session_state['pid']}.json"):
+                return
+            else:
+                json.dump(global_dict, open(f"data/state_{st.session_state['pid']}.json", 'w'))
         else:
-            # json.dump(global_dict, open(f"data/state_{st.session_state['pid']}.json", 'w'))
-             save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['pid']}.json", global_dict)
+            if storage.Blob(bucket=bucket, name=f"data/{STATE}_{st.session_state['pid']}.json").exists(client):
+                # load
+                return
+            else:
+                save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['pid']}.json", global_dict)
     else:
-        save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}.json", global_dict)
-        # json.dump(global_dict, open(f'data/state.json', 'w'))
+        if USE_LOCAL_DATA:
+            json.dump(global_dict, open(f'data/state.json', 'w'))
+        else:
+            save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}.json", global_dict)
 
 def example_finished_callback():
     for _ in st.session_state:
         global_dict[_] = st.session_state[_]
     global_dict["current_example_ind"] += 1
     if "logged_in" in st.session_state and st.session_state["logged_in"]:
-        save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['logged_in']}.json", dict(global_dict))
-        # json.dump(dict(global_dict), open(f"data/state_{st.session_state['logged_in']}.json", 'w'))
+        if USE_LOCAL_DATA:
+            json.dump(global_dict, open(f"data/state_{st.session_state['logged_in']}.json", 'w'))
+        else:
+            save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['logged_in']}.json", dict(global_dict))
     else:
-        save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}.json", dict(global_dict))
-        # json.dump(dict(global_dict), open(f'data/state.json', 'w'))
+        if USE_LOCAL_DATA:
+            json.dump(global_dict, open(f'data/state.json', 'w'))
+        else:
+            save_dict_to_gcs(BUCKET_NAME, f"data/{STATE}.json", dict(global_dict))
     js = '''
     <script>
         function scrollToTop() {
@@ -99,14 +114,20 @@ if __name__ == "__main__":
 
     if "reload" not in st.session_state or st.session_state["reload"]:
         if "logged_in" in st.session_state and st.session_state["logged_in"]:
-            global_dict = read_or_create_json_from_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['logged_in']}.json")
-            # global_dict = json.load(open(f"data/state_{st.session_state['logged_in']}.json", 'r'))
+            if USE_LOCAL_DATA:
+                global_dict = json.load(open(f"data/{STATE}_{st.session_state['logged_in']}.json", 'r'))
+            else:
+                global_dict = read_or_create_json_from_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['logged_in']}.json")
         elif "pid" in st.session_state and st.session_state["pid"]:
-            global_dict = read_or_create_json_from_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['pid']}.json")
-            # global_dict = json.load(open(f"data/state_{st.session_state['pid']}.json", 'r'))
+            if USE_LOCAL_DATA:
+                global_dict = json.load(open(f"data/{STATE}_{st.session_state['pid']}.json", 'r'))
+            else:
+                global_dict = read_or_create_json_from_gcs(BUCKET_NAME, f"data/{STATE}_{st.session_state['pid']}.json")
         else:
-            global_dict = read_or_create_json_from_gcs(BUCKET_NAME, f"data/{STATE}.json")
-            # global_dict = json.load(open(f'data/state.json', 'r'))
+            if USE_LOCAL_DATA:
+                global_dict = json.load(open(f'data/{STATE}.json', 'r'))
+            else:
+                global_dict = read_or_create_json_from_gcs(BUCKET_NAME, f"data/{STATE}.json")
         st.session_state["reload"] = False
         st.session_state["testcases"] = global_dict["testcases"]
         st.session_state["current_example_ind"] = global_dict["current_example_ind"]
@@ -114,8 +135,10 @@ if __name__ == "__main__":
         global_dict = st.session_state
 
     if "testcases_text" not in st.session_state:
-        testcases = read_or_create_json_from_gcs(BUCKET_NAME, f"data/{EXAMPLES}.json")
-        # testcases = json.load(open('data/errors_test.json', 'r'))
+        if USE_LOCAL_DATA:
+            testcases = json.load(open(f'data/{EXAMPLES}.json', 'r'))
+        else:
+            testcases = read_or_create_json_from_gcs(BUCKET_NAME, f"data/{EXAMPLES}.json")
         st.session_state["testcases_text"] = testcases
 
     testcases = st.session_state["testcases_text"]
