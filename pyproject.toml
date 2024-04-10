@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "llm-feedback-interface"
+version = "0.1.0"
+description = ""
+authors = ["Alicja Chaszczewicz <alicja@cs.stanford.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7"
+streamlit = "^1.27.2"
+google-cloud-storage = "^2.11.0"
+datasets = "^2.14.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

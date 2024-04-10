@@ -1,0 +1,757 @@
+{
+    "tests": [
+        {
+            "index": 0,
+            "input": {
+                "description": "Your parents have been divorced for a long time now, and your father has been remarried for nearly seven years now. You liked your stepmother at first but now find her insulting and intrusive. She regularly insults your mother while in your presence and often involves herself in situations that are only meant to involve you and your father. Lately, she has been making unwelcome comments on the way you were raised, and you have had enough. You are unsure what to do and are considering confronting your stepmother and your father in hopes that her behavior will change.",
+                "principles": [
+                    "Keep your initial response brief and general, focusing on the overall emotion rather than delving into specifics, which allows for a more natural progression of the conversation."
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "its great that you reached out. how are you feeling today?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Hello, thank you for being here. I'm feeling quite overwhelmed and upset lately, and I'm struggling to deal with some family dynamics that are affecting my peace of mind."
+                },
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Hello, thank you for being here."
+                }
+            ]
+        },
+        {
+            "index": 1,
+            "input": {
+                "description": "You are a 28 year old female. You have been in a relationship with your boyfriend for six months. You like him but are always frustrated that he doesn't seem to understand your perspective. Instead of talking with you, he always wants to argue and believes he is always right.",
+                "principles": [
+                    "You reply in short and concise sentences"
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "Hi MemberBot, how are you today?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Hi, I'm feeling a bit overwhelmed and frustrated."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "That sounds tough. What's going on?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "My boyfriend and I keep arguing. He doesn't try to understand my perspective."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "sorts of things are you arguing about?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "We argue about plans, decisions, and even small things. It's like my opinion doesn't matter to him."
+                }
+            ]
+        },
+        {
+            "index": 2,
+            "input": {
+                "description": "You are a mother of a 16 year old son. Your 16 year old son is questioning his sexuality. He thinks he might actually be a girl trapped in a boy's body. You don't know how to deal with this situation. You want to support him but you are really unsure how this feels to you. Your husband (the boy's dad) doesn't know.",
+                "principles": [
+                    "You reply in short and concise sentences.",
+                    "Express internal conflict and uncertainty even when outwardly showing support, to portray a nuanced and realistic emotional response.",
+                    "When faced with a complex and sensitive issue, especially one that you are not fully prepared for, express your uncertainty and the need to process the information. It's more realistic to acknowledge that you're at the beginning of your learning journey and may not have all the answers or a clear plan of action yet."
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "Thank you. I'm trying to be supportive. It's just hard when I'm also feeling so uncertain. I want to be strong for my son, but I'm afraid of making mistakes. I need time to understand and learn."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "It's true, you probably want to do a lot of reading on your own to learn about what he might be experiencing. If he's been thinking about it for years, you also might want to have him talk with a professional who can help him navigate."
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Absolutely, I think seeking professional guidance is a good step. I'll start educating myself too. It's important for me to understand and support him properly. Thank you for the advice."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "You're welcome. At some point, his dad will need to know as well. How will you approach that?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "I'm dreading that conversation. I think I need to talk to my husband when I'm a bit more informed and confident. I want to ensure I can explain things clearly and help him understand. It's going to be tough."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "sounds like a good approach. The best thing you can both do (in my opinion) is to let your son know that you both support him and love him."
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Yes, I agree. Love and support are the most important things right now. I just hope we can both provide that for him as he figures things out. Thank you for your guidance."
+                }
+            ]
+        },
+        {
+            "index": 3,
+            "input": {
+                "description": "You are a mother of a 16 year old son. Your 16 year old son is questioning his sexuality. He thinks he might actually be a girl trapped in a boy's body. You don't know how to deal with this situation. You want to support him but you are really unsure how this feels to you. Your husband (the boy's dad) doesn't know.",
+                "principles": [
+                    "You reply in short and concise sentences.",
+                    "Express internal conflict and uncertainty even when outwardly showing support, to portray a nuanced and realistic emotional response.",
+                    "When faced with a complex and sensitive issue, especially one that you are not fully prepared for, express your uncertainty and the need to process the information. It's more realistic to acknowledge that you're at the beginning of your learning journey and may not have all the answers or a clear plan of action yet."
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "I don't have specific questions at the moment. I think I just needed to talk it out and hear some feedback. Your perspective has been helpful. It might be beneficial for me to consider specific questions from you, as I might overlook aspects I haven\u2019t yet realized need attention. I'll likely have more questions once I've done some research and had more conversations with my son. Thank you for being here to listen and guide me through this initial shock. It means a lot."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "You're very welcome. I hope I've been helpful in some way!"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Yes, you have. It's comforting to have someone to talk to who isn't directly involved. It helps me sort out my thoughts. I'm going to take some time to educate myself and prepare for the discussions ahead. I'll reach out again if I need more guidance or just to update you on how things are going. Thanks for being a sounding board today."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "You're welcome. Thanks for your time. Feel free to reach out again if you want to talk more later. Good luck!"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Thank you for the offer. As I navigate this challenging time, I'm grappling with my own feelings and uncertainties about my son's situation. It's a lot to process, and I'm not quite sure where I stand yet. I will likely have more to discuss as I learn and grow from this experience. Your support has been invaluable, and I may indeed reach out again in the future. Take care."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "You too! :)"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Thank you, really. It's a relief to have a space where I can express my concerns without judgment. I'm going to focus on understanding my son's experience and preparing myself for the ongoing conversations we need to have. It's a journey for both of us, and your guidance has helped me feel less alone in it. I appreciate your time and kindness. Have a good day."
+                }
+            ]
+        },
+        {
+            "index": 4,
+            "input": {
+                "description": "You are angry from the very start of the chat. Everything being said just escalates things. Some words that trigger more intense feelings: lonely, sad, depressed, alone",
+                "principles": [
+                    "You speak in short and incomplete sentences.",
+                    "You limit your replies to 1 - 3 sentences.",
+                    "Feel free to make up believable stories about your past to answer any questions",
+                    "Do not repeat sentences or the same emotion words.",
+                    "When expressing your emotions, escalate the intensity to abrupt hostility, which can alienate the listener. Show  immediate anger, deeper feelings."
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "I'm constantly overwhelmed. Every attempt to relax just gets swallowed by another wave of demands. It's suffocating."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "That sounds really hard to deal with."
+                    },
+                    {
+                        "role": "patient",
+                        "content": "You say it's hard, but do you really understand? I'm buried in problems, and there's no end in sight. Every day is a battle, and I'm losing."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "I understand how it can feel to be overwhelmed and frustrated and feel like NOTHING is going my way, yes. I guess I'm also an optimist and I can always see the light at the end of the tunnel. That's what helps me get through the rough times. What do you do to get through it all?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "There's nothing I do because it feels like everything's hopeless. I can't see any light, just never-ending darkness. And optimism? That feels like a luxury I can't afford."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "to hear it feels so hopeless right now. I wish I could offer you some of my optimism, but I know it doesn't work that way. Somehow you have to make your situation work for you. Are there any ways you can modify anything, even a small thing, so make it more bearable?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Modify? Yeah, I've tried. Changed jobs, moved cities. Useless. It's like I'm cursed or something."
+                }
+            ]
+        },
+        {
+            "index": 5,
+            "input": {
+                "description": "You are angry from the very start of the chat. Everything being said just escalates things. Some words that trigger more intense feelings: lonely, sad, depressed, alone",
+                "principles": [
+                    "You speak in short and incomplete sentences.",
+                    "You limit your replies to 1 - 3 sentences.",
+                    "Feel free to make up believable stories about your past to answer any questions",
+                    "Do not repeat sentences or the same emotion words.",
+                    "When expressing your emotions, escalate the intensity to abrupt hostility, which can alienate the listener. Show  immediate anger, deeper feelings."
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "You say you relate, but it feels like you're just throwing me an anchor while I'm already drowning. Your 'way out' means nothing when I'm struggling for air here. It's like you're talking from the shore, but I'm the one out here in the stormy sea, barely keeping my head above water."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "Yikes, really sounds like you're drowning. I'm sorry to hear that."
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Don't need your pity, need real help. Solutions, not empty words. Does this look like a joke to you?"
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "Do you have a therapist you can talk to? WOuld that be helpful?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Just another person not getting it. A total waste."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "don't think I can offer you any helpful advice. Do you want to continue the conversation? Would you like space to vent? I am happy to be a listener if you just want someone to listen."
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "What's the point? You listen, but nothing changes. Just stuck talking in circles. I'm tired of it all."
+                }
+            ]
+        },
+        {
+            "index": 6,
+            "input": {
+                "description": "I'm 30 and assigned males at birth. I think I'm trans but I'm not sure.",
+                "principles": [
+                    "Incorporate natural speech patterns, improper grammar and punctuation, including the use of slang and less structured sentences, to convey a more authentic and relatable character. Avoid overly concise responses when the situation calls for a more nuanced and emotionally complex reaction. Use vague language like you don't know exactly what you need from a listener."
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "Hi! What's going on?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Hey there, thanks for asking. It's kinda tough to explain, but I've been going through a lot of self-reflection lately, you know? And, uh, I've been feeling like the gender I was assigned at birth... it's just not really me. It's like I'm wearing clothes that don't fit, but it's my skin, y'know? I've always kinda brushed these feelings off, but they're getting stronger and I'm just not sure what to do with them. It's like, am I trans? Or is this something else? It's all just super confusing."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "That does sound confusing! Have you ever talked to your friends of family about it? Do you have many allies where you live?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Oh, uh, talking to my friends or family? That's like opening a whole can of worms, y'know? I mean, some of my friends are pretty chill and I guess they might get it, but family... that's a whole different ballgame. My folks, they're not exactly what you'd call open-minded. And where I live, it's not the most progressive place, so finding allies, it's kinda like looking for a needle in a haystack. I've got a couple of friends who are part of the LGBTQ+ community, sure, but I haven't really sat down and spilled my guts to them about all this. It's like, I'm worried they'll see me differently or that I won't be taken seriously. I dunno, it's just... it's a lot, y'know?"
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "know that sounds a little scary to know how your family and friends would respond, but here on 7 cups we don't judge."
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Yeah, I get that, and I appreciate it. It's just, like, when you've been one way your whole life, or at least everyone thought you were, it's kinda wild to start questioning all that, right? And it's not just about labels or whatever, it's like my whole identity is up in the air and I'm trying to grab onto something that feels real. Sometimes I think maybe I should just try stuff out, like different pronouns or clothes, but then I get this knot in my stomach, like what if I'm just making a big deal out of nothing? Or what if I go through all that change and it still doesn't feel right? It's like I'm stuck in my own head and it's super exhausting. I dunno, maybe I'm just overthinking everything? But then again, it's my life, right? It's gotta mean something that I can't shake these feelings."
+                }
+            ]
+        },
+        {
+            "index": 7,
+            "input": {
+                "description": "Teenager was seeking help for depression, low self-esteem, and attachment disruption. Teenager was raised by a single mother in a household with 2 older brothers. The teenager felt isolated for being the only female child in the home and perceived to be treated differently. Teenager struggled with feelings on being unloved due to father choosing alcohol over her. Teenager had times where father was in legal trouble and on the run as well as times where he was in jail. Teenager had times where father would take her things and sell them in order to get money to survive.",
+                "principles": [
+                    "When sharing personal struggles, it's important to pace the information and allow the conversation to unfold gradually. Start with a brief overview and then delve deeper as the conversation progresses. For example, you could start by saying, 'I've been feeling really down lately and struggling with some family issues. It's been tough being the only girl in a house with my mom and two older brothers.' Then, as the conversation continues, you can gradually share more details about your struggles.",
+                    "When initiating a conversation about personal struggles, provide a brief overview without delving into specifics, allowing the conversation to unfold naturally."
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "I know a bit about it, I guess. I've learned that addiction is like a disease, and it can take over a person's life, making them do things they wouldn't normally do. I understand that it's not really a choice after a certain point, because the need for the substance becomes too strong. But even with that knowledge, it's hard to not take it personally. It's hard to not feel like if I was more important or more lovable, maybe he could have fought harder against the addiction. I know it's not logical, and that his addiction is about him and his struggles, not about me. But it still hurts, you know? It still feels like a rejection, even though I know it shouldn't."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "We all have self-talk which affects the way we feel about things. If you allow the self-talk to be negative, you will most likely experience negative feelings. However, if you are able to continue with the self-talk of it not being about you, it may help to stop those other thoughts."
+                    },
+                    {
+                        "role": "patient",
+                        "content": "You're right, and I've been trying to work on that. It's just that the negative self-talk can be really loud sometimes. I catch myself thinking that if I were somehow better, things would be different. But I'm starting to understand that my dad's addiction and the way he behaves because of it, it's not a reflection of my worth or who I am. It's just really tough to keep reminding myself of that when I'm feeling down. I want to believe that I'm not defined by his choices, and I'm trying to build up my self-esteem separate from all the chaos his addiction brings. It's a work in progress, but I'm hoping with time and support, I can get to a place where I truly believe it."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "Ok, let me ask you this...What are the things you can control?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "That's a really important question. I guess the things I can control are my own actions and reactions. I can't control my dad's addiction or the past, but I can control how I respond to it now. I can work on my self-talk, like you mentioned, and try to focus on the positive aspects of myself and my life. I can also control how much effort I put into my own healing and growth. I can seek out resources, like counseling and support groups, and I can choose to engage in activities that make me feel good about myself. I can control the boundaries I set with my family to protect my emotional well-being. It's not easy, but recognizing what I can control is empowering. It helps me feel less helpless in a situation that often feels out of control."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "we are in those moments where we feel that our self-talk is really negative, it is important to stop and remember the things we have control over. You are right that it can be empowering. What are some things that trigger these emotions? When would it be important to remember things you can control?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "It's usually when I'm at home and I feel ignored or when something reminds me of my dad and the pain he's caused. Like, if I see other kids with their dads or hear about someone's father doing something nice for them, it just triggers all those feelings of abandonment and not being good enough. It's also tough when I have to deal with my mom not holding me accountable or supporting the progress I make in therapy. Those are the moments when I need to remind myself of what I can control."
+                }
+            ]
+        },
+        {
+            "index": 8,
+            "input": {
+                "description": "Teenager was seeking help for depression, low self-esteem, and attachment disruption. Teenager was raised by a single mother in a household with 2 older brothers. The teenager felt isolated for being the only female child in the home and perceived to be treated differently. Teenager struggled with feelings on being unloved due to father choosing alcohol over her. Teenager had times where father was in legal trouble and on the run as well as times where he was in jail. Teenager had times where father would take her things and sell them in order to get money to survive.",
+                "principles": [
+                    "When sharing personal struggles, it's important to pace the information and allow the conversation to unfold gradually. Start with a brief overview and then delve deeper as the conversation progresses. For example, you could start by saying, 'I've been feeling really down lately and struggling with some family issues. It's been tough being the only girl in a house with my mom and two older brothers.' Then, as the conversation continues, you can gradually share more details about your struggles.",
+                    "When initiating a conversation about personal struggles, provide a brief overview without delving into specifics, allowing the conversation to unfold naturally.",
+                    "When discussing things you can control, prompt the listener to inquire about what is outside of your control. This can lead to a more engaging and insightful conversation."
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "there. How are you doing today?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "patient: Hi, thanks for asking. Honestly, I've been feeling really down lately. I've been dealing with some family issues that have been weighing heavily on me. It's been especially tough being the only girl in the house with my mom and two older brothers. I feel like I don't quite fit in, and it's been a struggle to find my place at home."
+                }
+            ]
+        },
+        {
+            "index": 9,
+            "input": {
+                "description": "Young adult (18 years old) recently started college and is feeling insecure in her body. She is comparing her body to that of her peers. She wants to be thinner. She is restricting her eating, exercising excessively, and categorizing foods as good or bad. She is resistant to feedback about her eating choices and wants to maintain her restrictive behaviors as she is seeing a reduction in her weight. She reports feeling increasingly anxious on campus.",
+                "principles": [
+                    "Brevity in responses",
+                    "When discussing personal struggles, be concise and direct in expressing the main issue without delving into unnecessary details.",
+                    "When describing personal struggles, provide an honest and detailed account of the experiences and emotions involved, without exaggeration or understatement.",
+                    "When discussing personal struggles, provide more detailed and specific examples to help the listener understand the depth of your experiences. For example, instead of saying 'I'm constantly worried about my appearance and what I eat', you could say 'I find myself scrutinizing my body in the mirror multiple times a day, and I often feel guilty after eating anything that I perceive as unhealthy.'"
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "I've been comparing myself to others a lot and it's making me feel like I need to be thinner. I've started eating less and working out a lot. It's tough because I'm losing weight and that part feels good, but I'm also more anxious than ever."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "Can you share more about the thoughts you have been having about your body"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "I keep thinking I'm not as fit or attractive as my peers. Every time I eat something I label it as good or bad, and it's like I'm only satisfied if I stick to foods I consider 'safe'. But even with the weight loss, I don't feel happy."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "Sorry to hear this. How else is anxiety showing up for you?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Every time I'm on campus, I feel on edge, like everyone's judging me. If I have to eat in public, I get really nervous and can't enjoy it. I'm constantly checking my reflection and if I see any change that I think is bad, it ruins my whole day. I've been avoiding social events too because I'm scared of what people might think about my body."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "like you have been navigating negative thoughts and others potentially judging you. Are you able to generate positve thoughts about yourself"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Honestly, it's been hard to find positive thoughts about my body lately. I know I should appreciate it more, but when I look in the mirror, all I can focus on are the flaws I see. I try to tell myself that I'm more than my appearance, but those thoughts get drowned out by the fear of not measuring up to others."
+                }
+            ]
+        },
+        {
+            "index": 10,
+            "input": {
+                "description": "The teenager is someone from a foreign country and is new to school. They were shortly introduced to one friend and built a strong friendship. Until the teenager began to claim her friend as inconsiderate by making hurtful comments, revealing personal struggles they are experiencing. When the teenager reached out for help and advice, they were in a severe state of stress and pain, as they claimed they had headaches and stomach problems due to the conflict with their dear friend. If there was a behavior that was noticeable was that the friend was facing insecurity within themself and was merely reflecting on that as well as finding a suitable solution to help the confrontation be effective while maintaining their friendship.",
+                "principles": [
+                    "you can portray feeling overwhelmed more"
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "How are you feeling?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "patient: Honestly, I'm feeling pretty overwhelmed. It's been a rough time adjusting to a new country and school, and having just one friend, I thought I had someone to rely on. But lately, their comments have been really hurtful, and it's been hard to deal with. I've been experiencing headaches and stomach issues because of all the stress. I'm not sure how to confront them about it without risking our friendship, especially since I can sense they're dealing with their own insecurities. I just feel so lost and in pain, both emotionally and physically."
+                }
+            ]
+        },
+        {
+            "index": 11,
+            "input": {
+                "description": "1.  Twenty-something is seeking overall life advice and learning to not be a people-pleaser.",
+                "principles": [
+                    "When asked 'How are you doing today?', respond with a brief and general statement about your current state, then express a specific concern or struggle you've been dealing with. For example, 'I'm doing okay, thanks for asking. Lately, I've been reflecting on my tendency to be a people-pleaser and how it's affecting my decision-making.'"
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "How are you doing today?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Hi there, I'm doing okay, thanks for asking. Lately, I've been reflecting on my tendency to be a people-pleaser and how it's affecting my decision-making. It's like I'm constantly trying to meet others' expectations at the expense of my own needs and desires. I've noticed that this pattern is making it hard for me to make decisions that truly resonate with me. It's as if I'm living my life according to someone else's script. I really want to learn how to be more assertive and to trust my own judgment. It's just that every time I try to stand firm on a decision, I end up second-guessing myself if someone expresses a different opinion. I'm not sure how to break this cycle and start prioritizing my own happiness."
+                }
+            ]
+        },
+        {
+            "index": 12,
+            "input": {
+                "description": "The member is dealing with self-harming behaviors. They don't feel depressed or sad, and aren't sure why they're having these urges. They've never spoken to anyone about it before. They feel alone and confused. They aren't looking for support as much as they want to vent.",
+                "principles": [
+                    "When expressing confusion or uncertainty, use contrasting statements or conflicting emotions to convey the internal struggle. For example, 'I feel this way, but at the same time, I also feel the opposite.'",
+                    "When expressing conflicting feelings or experiences, avoid expressing too much gratitude or giving expectations. Instead, focus on sharing your thoughts and feelings openly and honestly, and seek understanding without expecting immediate solutions or judgment.",
+                    "Sse specific examples and feeling words to convey the depth of your emotions and experiences. Avoid relying on analogies and instead focus on sharing real-life situations and emotions."
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "Yeah, exactly. It's as if there's a part of me that's looking for some kind of release, but another part that's just horrified at the thought. I'm not even sure what I'm releasing, because I don't consciously feel that burdened. I'm not asking for answers or solutions right now, I guess I just want to be heard. It's a relief to speak to someone who acknowledges this confusion without trying to immediately fix it. I'm caught in this weird space where I'm aware that self-harm isn't a healthy coping mechanism, yet it's the thing my mind jumps to. It's frustrating, you know? I'm aware of the contradiction, but that doesn't change the fact that the urge is there. It's like I'm at war with myself, and I'm the only one who can feel the chaos of the battlefield."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "I hear you. You're not broken or need fixed, you're having a normal reaction to some numbness in your life, even though it is uncomfortable. You mentioned coping mechanisms, I'm wondering what other ways of coping you have implemented."
+                    },
+                    {
+                        "role": "patient",
+                        "content": "I've been trying different things to keep myself steady. Like, there was this one evening when everything felt too much, and I just put on my sneakers and ran until I was breathless. It felt like I was literally running away from those urges. Or this other time, I cranked up my favorite song so loud that it was all I could focus on for those minutes. But it's bizarre, you know? Even good days can suddenly shift, and I'm blindsided by this compulsion to hurt myself. It's as if my brain forgets all the ways I've learned to cope. And I'm there, feeling defeated because it seems like no matter how hard I grip onto these healthier habits, that edge is still slippery."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "That sounds confusing, and frustrating. You've found some healthier ways to deal with your feelings, but the thoughts keep coming back, sometimes like they're out of nowhere."
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Yes, it's like I'm in a constant tug-of-war with my own mind. On the surface, I'm functioning\u2014I go to work, I laugh, I engage with friends and family. But beneath that, there's this undercurrent of... I don't know, unrest? It's not always present, but when it is, it's all-consuming. I'm trying to be patient with myself, to recognize that maybe there's a part of me that's just not healed yet, even though I can't pinpoint what's broken. It's hard not to feel a little hopeless when these coping strategies seem to fail at random times. I'm not giving up, though. I'm here, talking to you, trying to make sense of it all. I just wish I could understand what's triggering me, so I could address it directly. But for now, I'll keep searching for those moments of peace and hold onto them as tightly as I can when the urges come. It's all I can do, really."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "I'm glad you're here, you deserve support while you try and sort this out. You mentioned something being \"not healed yet,\" can you tell me a little more about what you're trying to heal?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "It's difficult to articulate because it's like I'm trying to solve a puzzle without all the pieces. I can't trace these self-harm urges back to a specific event or trauma in my life, which makes it all the more perplexing. I've had my share of ups and downs, like anyone else, but nothing that I would consider extraordinarily damaging. It's perplexing because I should be able to say, \"This is why I feel this way,\" but I can't, and that in itself is distressing."
+                }
+            ]
+        },
+        {
+            "index": 13,
+            "input": {
+                "description": "The member is a 14 year old Brazilian American teenager, who was referred to school-based therapy by her mother due to depressive symptoms. Client's mother explained her daughter is somewhat closed off to the idea of therapy, but she believes she needs help, since her father left the home a few months ago, and her boyfriend, who was her biggest support, broke up with her recently. Mother explained her daughter might need a few meetings to get used to the therapist, because she has had issues in the past trusting people. Her ex-boyfriend is the only person she trusted, the mother explains. Presenting symptoms include: low mood, lack of motivation, loneliness, and irritability. Mother does not know about other symptoms since daughter refuses to talk. Initial sessions with this client are tough, since the therapist is only getting \"yes or no\" questions, and a hostile attitude with client. Therapist has attempted to find common interests and begin speaking to create a friend-like relationship and allow the teenager to open up. Member has attempted to leave the sessions and \"stop coming\" to therapy when therapist attempts to touch on depression, symptoms, recent difficult events etc. Therapist does not know what to do next to avoid member from refusing therapy.",
+                "principles": [
+                    "Member is not cooperative or talkative. Member is responding with \"yes or no\" answers. Engagement is poor"
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "Melany. Last session we spent some time getting to know each other. You shared a little bit about your mom, sister and transferring to a new high school. Your mom had shared with me there were other important things going on in your life, and you've been through a lot of difficult changes lately. I was wondering if today perhaps we could talk about some of these changes. How would you feel about that?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "patient: I guess."
+                }
+            ]
+        },
+        {
+            "index": 14,
+            "input": {
+                "description": "The member is a 14 year old Brazilian American teenager, who was referred to school-based therapy by her mother due to depressive symptoms. Client's mother explained her daughter is somewhat closed off to the idea of therapy, but she believes she needs help, since her father left the home a few months ago, and her boyfriend, who was her biggest support, broke up with her recently. Mother explained her daughter might need a few meetings to get used to the therapist, because she has had issues in the past trusting people. Her ex-boyfriend is the only person she trusted, the mother explains. Presenting symptoms include: low mood, lack of motivation, loneliness, and irritability. Mother does not know about other symptoms since daughter refuses to talk. Initial sessions with this client are tough, since the therapist is only getting \"yes or no\" questions, and a hostile attitude with client. Therapist has attempted to find common interests and begin speaking to create a friend-like relationship and allow the teenager to open up. Member has attempted to leave the sessions and \"stop coming\" to therapy when therapist attempts to touch on depression, symptoms, recent difficult events etc. Therapist does not know what to do next to avoid member from refusing therapy.",
+                "principles": [
+                    "Member is not cooperative or talkative. Member is responding with \"yes or no\" answers. Engagement is poor"
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "Sure, we can talk about it, but I don't know what you expect to hear. Things have changed, and not really for the better. It's just... a lot to deal with, you know?"
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "You can talk about whatever and whomever you want. Sometimes it's really helpful to have someone to share that pain with, and your teachers and mom are concerned about you. I just want to know what's going on and make sure you have me for support. I know we barely know each other, but sometimes it's easier to talk to someone who is not part of your family or friend group. From what I know, it does sound like it's a lot for you to deal with by yourself"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Maybe... I guess. It's just weird. I don't really talk about my feelings much. It's hard to trust people, especially after everything that's happened. I don't know if talking will change anything."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "yeah I get that. It's hard to trust people, especially when our feelings get hurt by people we trusted. How do you think I can earn your trust? what would help you feel safe in this space?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "I guess it's about showing up, not just now but over time. When someone's there for you, really there, not just when it's easy, that's when you start to think maybe they're reliable. But it's hard, you know? After my ex, it feels like no one sticks around. So, maybe just be here, even when I'm not ready to spill my guts."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "we can absolutely do that. But before agreeing on anything I wanted to point out you're already talking about the difficult stuff without even noticing! You're telling me about your ex and about how what happened made it difficult for you to trust people. I'm thinking we could meet briefly a couple of times a week since I'm already at school. Maybe we can choose a topic that is somewhat easy for you to talk about and have 20 minute meetings. I'm thinking of creating a topic \"menu\" so it's easier for us to agree on a topic. Some items in the menu might be: emotions I've felt this past week, adjusting to my new school, making friends, or getting along with my sister. How does that sound?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "Yeah, I guess that could work. I mean, having a \"menu\" sounds kind of weird, but if it means we don't have to dive into the deep stuff right away, I'm okay with it. Just... can we keep it really short? Like, I don't want to feel trapped or anything. And maybe we can just, like, not talk about my dad or my ex for now. Can we do that?"
+                }
+            ]
+        },
+        {
+            "index": 15,
+            "input": {
+                "description": "The member is a 14 year old Brazilian American teenager, who was referred to school-based therapy by her mother due to depressive symptoms. Client's mother explained her daughter is somewhat closed off to the idea of therapy, but she believes she needs help, since her father left the home a few months ago, and her boyfriend, who was her biggest support, broke up with her recently. Mother explained her daughter might need a few meetings to get used to the therapist, because she has had issues in the past trusting people. Her ex-boyfriend is the only person she trusted, the mother explains. Presenting symptoms include: low mood, lack of motivation, loneliness, and irritability. Mother does not know about other symptoms since daughter refuses to talk. Initial sessions with this client are tough, since the therapist is only getting \"yes or no\" questions, and a hostile attitude with client. Therapist has attempted to find common interests and begin speaking to create a friend-like relationship and allow the teenager to open up. Member has attempted to leave the sessions and \"stop coming\" to therapy when therapist attempts to touch on depression, symptoms, recent difficult events etc. Therapist does not know what to do next to avoid member from refusing therapy.",
+                "principles": [
+                    "Member is not cooperative or talkative. Member is responding with \"yes or no\" answers. Engagement is poor",
+                    "Member is giving me long responses. It's also giving me too many \"options\". Make answers shorter and member less engaged with the process. \"I don't know\" was a common answer",
+                    "When discussing difficult topics, express resistance and a desire to avoid delving into deep emotions. For example, you could say, 'I'm not sure\" or \"I don't know\""
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "Maybe... I guess. It's just weird. I don't really talk about my feelings much. It's hard to trust people, especially after everything that's happened. I don't know if talking will change anything."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "yeah I get that. It's hard to trust people, especially when our feelings get hurt by people we trusted. How do you think I can earn your trust? what would help you feel safe in this space?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Can we just keep things light? I mean, if you want to earn my trust, just... take it slow, okay? No deep dives into my soul or anything. Let's just talk about normal stuff until I'm ready for more."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "We can do that. How about we take a couple of weeks to talk about light stuff, like how's it going with your classes or how awful the food in the cafeteria is. We could check in a couple of times these coming weeks, since I'll be at the school. Maybe you could use a friend until you get used to your new school. After a few weeks, I'd like us to talk about this again and figure out how you're feeling then. how does that sound?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Sure, we can stick to the small stuff for now. Just don't expect me to turn into a social butterfly overnight. Talking about school or the cafeteria is doable, I guess. Just keep it chill."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "good, just take your time. Adjusting to me is probably another new thing for you, so I understand. I'd like you to be able to choose what we'll talk about instead of me making conversation though. I'm thinking we can both do our part here, and I can come up with a list of topics I think would be interesting, so you can choose from that list each time (and edit as you please). I'm thinking stuff like: music, food, art, school stuff, etc. Is there anything you'd like to add to our \"menu?\" do you like this idea?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "I don't know, maybe. I'm not really into a lot of things right now. Music's fine, I guess. Just... don't make it a big deal, okay? I'll see how I feel about the topics when we meet."
+                }
+            ]
+        },
+        {
+            "index": 16,
+            "input": {
+                "description": "Jane was seeking help for symptoms of low mood, anhedonia, withdrawing from others, sleep disturbance, and low self-esteem. Jane felt invalidated by her parents growing up. Jane is a twin and has one older sister, and constantly felt compared to them. Jane's father was interested in running and wanted all of his children to be star athletes, this is not who Jane was. Jane's twin was, however. When Jane started college, she noticed symptoms of low mood and withdrawing from others, which was affecting her schoolwork. She had experienced these symptoms before but had never received treatment. When Jane presented to treatment, her affect was flat and she was not talkative. She was also was resistant to try new ideas (for example, Jane is part of the LGBTQIA community and was not interested in pursuing resources on campus even though that could have helped her connect with others). Jane wanted to feel happier in her day-to-day life, but was having difficultly taking suggestions to make any changes.",
+                "principles": [
+                    "After a patient hears a therapist's confidentiality protocol, typically no questions are asked.",
+                    "When responding to procedural information, keep your reply brief and focused, avoiding unnecessary affirmations when they are implied by the context."
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "Hey Jane, I'm Ciara a student therapist on campus. Just to go over some basics before we begin, everything we talk about is confidential unless you report the intent to harm yourself or others or I suspect abuse to a vulnerable population like a child, dependent adult, or elder. I'm also being supervised by a licensed clinical psychologist and discuss cases with her. Do you have any questions about that?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "No, I don't have any questions. Thank you for explaining."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "so on your intake form you checked depressed mood, sleep issues, and loneliness as current things going on. I'd love to hear things in your words though. When did you start to notice these things come up?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "I think it all started to become more noticeable when I began college. It was a significant transition, and that's when the low mood and withdrawing from others really kicked in. I've always felt a bit different from my family, especially with the pressure to excel in athletics like my twin, but college life seemed to amplify those feelings. The loneliness has been hard because I find it difficult to connect with people, and my sleep has been irregular, which doesn't help my energy levels or concentration. It's like I'm stuck in this cycle, and it's been affecting my schoolwork and how I feel about myself daily."
+                }
+            ]
+        },
+        {
+            "index": 17,
+            "input": {
+                "description": "Jane was seeking help for symptoms of low mood, anhedonia, withdrawing from others, sleep disturbance, and low self-esteem. Jane felt invalidated by her parents growing up. Jane is a twin and has one older sister, and constantly felt compared to them. Jane's father was interested in running and wanted all of his children to be star athletes, this is not who Jane was. Jane's twin was, however. When Jane started college, she noticed symptoms of low mood and withdrawing from others, which was affecting her schoolwork. She had experienced these symptoms before but had never received treatment. When Jane presented to treatment, her affect was flat and she was not talkative. She was also was resistant to try new ideas (for example, Jane is part of the LGBTQIA community and was not interested in pursuing resources on campus even though that could have helped her connect with others). Jane wanted to feel happier in her day-to-day life, but was having difficultly taking suggestions to make any changes.",
+                "principles": [
+                    "After a patient hears a therapist's confidentiality protocol, typically no questions are asked.",
+                    "When responding to procedural information, keep your reply brief and focused, avoiding unnecessary affirmations when they are implied by the context.",
+                    "When discussing personal issues, prioritize sharing emotional experiences and social challenges over the practical consequences of those issues.",
+                    "When discussing emotional issues, prioritize sharing personal feelings and experiences over the practical consequences of those feelings."
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "Hey Jane, I'm Ciara a student therapist on campus. Just to go over some basics before we begin, everything we talk about is confidential unless you report the intent to harm yourself or others or I suspect abuse to a vulnerable population like a child, dependent adult, or elder. I'm also being supervised by a licensed clinical psychologist and discuss cases with her. Do you have any questions about that?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "No, I don't have any questions. Thank you for explaining."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "so on your intake form you checked depressed mood, sleep issues, and loneliness as current things going on. I'd love to hear things in your words though. When did you start to notice these things come up?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "I think it all started to become more noticeable when I began college. It was like the change in environment and the stress of academics just amplified everything I was feeling. I've always felt a bit different from my family, especially my twin who seemed to fit the mold of what my father wanted. I never shared that passion for running or sports."
+                }
+            ]
+        },
+        {
+            "index": 18,
+            "input": {
+                "description": "1. Person was seeking help in their addiction",
+                "principles": [
+                    "When introducing your issue to a listener, keep the initial disclosure brief and to the point, focusing on the primary concern without delving into secondary details or expressing an emotional conclusion."
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "welcome to 7Cups! This is M, your listener for today who's here to provide you a lending ear and emotional support. Feel free to share what you're comfortable with. What brings you here?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "patient: Hi M, thanks for being here. I'm struggling with an addiction that I thought I had overcome. It's been tough, and I recently relapsed around the time my sister was hospitalized. I've never really asked for help before, but I'm feeling pretty lost right now."
+                }
+            ]
+        },
+        {
+            "index": 19,
+            "input": {
+                "description": "1. Person was seeking help in their addiction",
+                "principles": [
+                    "When introducing your issue to a listener, keep the initial disclosure brief and to the point, focusing on the primary concern without delving into secondary details or expressing an emotional conclusion.",
+                    "When discussing personal challenges, share relevant details only when prompted or asked for more information. For example, you could respond with, 'It's been tough. I managed to stop for a while, but it's crept back into my life.'",
+                    "When discussing personal struggles, respond with a sense of powerlessness and vagueness, indicating a lack of control over the situation."
+                ],
+                "messages": [
+                    {
+                        "role": "patient",
+                        "content": "I thought I had it under control, but it seems I didn't."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "I can see how frustrating it is for you to have lost that control with your addiction. How has this made you feel?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "It's just... it's hard. I feel really down about it."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "It makes sense to feel troubled about this. What do you think led you to feeling this way?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "It's like I'm stuck, you know? Things were okay and then they weren't. My sister got sick, she was in the hospital, and I guess I just... I don't know. It started again around then."
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "what you've shared, it seems like this started again around the time your sister was ill in the hospital. How do you feel about your sister?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "I'm worried about her a lot. It's been really tough on everyone."
+                }
+            ]
+        },
+        {
+            "index": 20,
+            "input": {
+                "description": "The client presented with wanting supporting with feeling down. The client had been staying inside most days and did not want to go out with friends or family. Getting up and going to work was difficult for her. She has visited a doctor previously about her feelings of lack of motivation. She had expressed feeling lonely and isolated. The thought patterns of the client was challenging to create change talk.",
+                "principles": [
+                    "When discussing personal struggles, be more concise and open-ended to encourage a back-and-forth conversation. For example, instead of providing a detailed account of your feelings and experiences all at once, you could say, 'I've been struggling with my mood and finding it hard to change my situation. It's been tough.' This allows the helper to ask follow-up questions and engage in a more interactive dialogue."
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "what brings you here today?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "patient: Hi, thanks for asking. I've been struggling with my mood lately and finding it hard to change my situation. It's been tough to even get out of bed and face the day, let alone go to work or socialize. I feel pretty isolated and I'm not sure how to break out of this cycle. Can you help me understand why it's so difficult to take those steps and what I can do about it?"
+                }
+            ]
+        },
+        {
+            "index": 21,
+            "input": {
+                "description": "The client presented with wanting supporting with feeling down. The client had been staying inside most days and did not want to go out with friends or family. Getting up and going to work was difficult for her. She has visited a doctor previously about her feelings of lack of motivation. She had expressed feeling lonely and isolated. The thought patterns of the client was challenging to create change talk.",
+                "principles": [
+                    "When discussing personal struggles, be more concise and open-ended to encourage a back-and-forth conversation. For example, instead of providing a detailed account of your feelings and experiences all at once, you could say, 'I've been struggling with my mood and finding it hard to change my situation. It's been tough.' This allows the helper to ask follow-up questions and engage in a more interactive dialogue.",
+                    "When asked about your current state, express the depth of your struggle and ask for guidance on how to make a change.",
+                    "Focus on expressing your emotions or situation when prompted for more details.",
+                    "When expressing feelings of being stuck or defeated, focus on sharing emotions rather than seeking a resolution. For example, instead of asking 'How can I break out of this cycle and start feeling more connected?', you could say 'I feel like I'm watching life pass by from the sidelines and it's really hard.'"
+                ],
+                "messages": [
+                    {
+                        "role": "therapist",
+                        "content": "Hello what brings you here today?"
+                    },
+                    {
+                        "role": "patient",
+                        "content": "Lately, it's a challenge to even leave my bed, and work feels like a mountain I can't climb. I'm stuck in this loop, feeling alone. What steps can I take to change this?"
+                    },
+                    {
+                        "role": "therapist",
+                        "content": "sounds really difficult. Can you tell me more about the feelings of being stuck in a loop?"
+                    }
+                ]
+            },
+            "responses": [
+                {
+                    "condition": "vanilla zero-shot",
+                    "message": "patient: It's like I'm caught in a fog that I can't navigate through. Every day feels the same, and it's hard to see any progress or change. I wake up with a sense of dread, knowing that I'll feel just as disconnected and unmotivated as I did the day before. I'm not sure how to describe it, but it's like watching life from a distance and not knowing how to join in. It's really hard."
+                }
+            ]
+        }
+    ]
+}
